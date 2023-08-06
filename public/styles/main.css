@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    letter-spacing: 5px;
+    font-style: oblique 12deg;
+    font-weight: 350;
+}    
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+.header{
+    background-color: #6528F7;
+    height: 8vh;
+    width: 100vw;
+
+}
+
+main{
+    background-color: #D7BBF5;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.today{
+    height: 7vh;
+    width: auto;
+    float:left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vh;
+    
+}
+
+.work{
+    height: 7vh;
+    width: auto;
+    float:left;
+
+    margin-left: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon{
+    height: 2rem;
+}
+
+.header > div{
+    margin-top: 0.5vh;
+}
+
+.date{
+    max-width: 400px;
+    margin : 50px auto;
+    background-color: #A076F9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px 5px #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-weight: 500;
+    font-size:2rem;
+}
+
+
+
+.item{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray
+}
+
+.box{
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 4px 5px #888888;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #EDE4FF;
+}
+
+input[type = "text"]{
+    text-align: center;
+    height: 8vh;
+    width: 320px;
+    background-color: transparent;
+    border: none;
+    top:0px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-top:0.9vh;
+    border-width: 0;
+    text-align: center;
+    display: inline-block;
+    background-color: #D7BBF5;
+    color: white;
+    border-color: transparent;
+}
+
+form{
+    margin-top: 0em;
+
+}
+
+button > h1{
+    font-size:3rem;
+    margin-left: 0.4rem;
+}
+
+.check{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div p {
+    font-size:1.7rem;
+}
+
+#newTask{
+    font-size: 1.7rem;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.footer{
+    background-color: #6528F7;
+    height: 8vh;
+    width: 100vw;
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 5vh;
+}
+
+.footer-icon{
+    height: 7vh;
+}

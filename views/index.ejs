@@ -1,0 +1,37 @@
+<%- include("./partials/header.ejs") %>
+    <main>
+        <div class = "date">
+            <h1><%= today%></h1>
+        </div>
+
+        <div class = "box">
+
+            <% for (let i = 0; i < tasks.length ; i++){%>
+                <div class = "item">
+                    <input type = "checkbox" name = "checkBox" class = "check">
+                    <p>
+                        <%= tasks[i]%>
+                    </p>
+                </div>
+
+             <% } %>   
+             
+            <form id = "form-item" action = "/todaysubmit" method = "post">
+                <input type = "text" name = "newItem" placeholder="New Item" autocomplete="off" id = "newTask">
+                <button type = "submit" name = "list" value = "Thursday"><h1>+</h1></button>
+
+            </form>
+        </div>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $("input[type='checkbox']").on("click", function(){
+            $(this).parent().addClass("line")
+            $(this).parent().fadeOut();
+        })
+    </script>
+
+</body>
+</html>
