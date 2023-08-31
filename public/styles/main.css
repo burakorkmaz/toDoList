@@ -108,8 +108,9 @@ button{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-top:0.9vh;
+    margin-bottom: 0.9vh;
     border-width: 0;
     text-align: center;
     display: inline-block;
@@ -123,10 +124,7 @@ form{
 
 }
 
-button > h1{
-    font-size:3rem;
-    margin-left: 0.4rem;
-}
+
 
 .check{
     margin-left: 20px;
@@ -159,4 +157,24 @@ div p {
 
 .footer-icon{
     height: 7vh;
+}
+
+@media (max-width:500px){
+    .date{
+        max-width: 250px;
+        font-size: 1.5rem;
+    }
+    .box{
+        max-width: 250px;
+    }
+    input[type = "text"]{
+        width: 190px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+
+    }
+
 }
