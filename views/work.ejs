@@ -8,17 +8,19 @@
         <div class = "box">
 
             <% for (let i = 0; i < works.length ; i++){%>
-                <div class = "item">
-                    <input type = "checkbox" name = "checkBox" class = "check">
-                    <p>
-                        <%= works[i]%>
-                    </p>
-                </div>
-
+                <form action = "/deleteWork" method = "post">
+                    <div class = "item">
+                        <input type = "checkbox" name = "checkBox" value = "<%=works[i]._id %>"class = "check" onChange="this.form.submit()">
+                        <p>
+                            <%= works[i].content%>
+                        </p>
+                    </div>
+                </form>
+                    
              <% } %>   
             <form id = "form-item" action = "/worksubmit" method = "post">
                 <input type = "text" name = "newItem" placeholder="New Item" autocomplete="off" id = "newTask">
-                <button type = "submit" name = "list" value = "Thursday"><h1>+</h1></button>
+                <button type = "submit" name = "list" value = "Thursday">Add</button>
 
             </form>
         </div>
